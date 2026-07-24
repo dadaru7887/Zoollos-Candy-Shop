@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Local env/config
+.env
+
+# Large binaries — distributed via Google Drive instead (see README)
+single_red_policy/
+single_violet_policy/
+inference.MOVE

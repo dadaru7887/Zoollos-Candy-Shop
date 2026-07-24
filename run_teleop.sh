@@ -1,0 +1,2 @@
+#!/bin/bash
+lerobot-teleoperate --robot.type=omx_follower --robot.port=/dev/omx_follower --robot.id=omx_follower_arm --robot.cameras="{front: {type: opencv, index_or_path: '/dev/video4', width: 640, height: 480, fps: 30, fourcc: 'MJPG'}, wrist: {type: opencv, index_or_path: '/dev/video6', width: 640, height: 480, fps: 30, fourcc: 'MJPG'}}" --teleop.type=omx_leader --teleop.port=/dev/omx_leader --teleop.id=omx_leader_arm --display_data=true
