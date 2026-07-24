@@ -1,4 +1,4 @@
-# 🍬 Zoollos Candy Shop
+# 🍬 Zoollo's Candy Shop
 
 로봇팔(OMX)이 모방학습(ACT) 정책으로 사탕을 저울에 올리고, 카메라로 저울 LCD를 읽어 무게 → 가격을 계산해 보여주는 키오스크 데모입니다.
 
@@ -7,6 +7,8 @@ A robot-arm (OMX) kiosk demo that uses imitation-learning (ACT) policies to plac
 **흐름 / Flow**
 세트 선택(빨강/보라) → 로봇이 ACT 정책으로 해당 사탕을 집어 저울에 올림 → 카메라로 저울 개수/LCD 숫자 판독 → 가격 계산 → 결과 표시
 Select a set (red/violet) → robot picks the candy via its ACT policy and places it on the scale → camera detects object count / reads the LCD digits → price is computed → result is shown.
+
+![Zoollo's Candy Shop 키오스크 홈 화면 / kiosk homepage](homepage.png)
 
 ---
 
@@ -51,8 +53,8 @@ price = weight_g * PRICE_PER_GRAM
 가중치 파일이 커서(수백 MB) 이 리포에는 포함하지 않고 구글 드라이브로 배포합니다. 다운로드 후 리포 루트에 압축을 풀어 `single_red_policy/`, `single_violet_policy/` 폴더로 놓으면 됩니다.
 Weight files are large (hundreds of MB) so they're distributed via Google Drive instead of this repo. Download and unzip into the repo root as `single_red_policy/` and `single_violet_policy/`.
 
-- `single_red_policy.zip` — TODO: 드라이브 링크 추가 / add Drive link
-- `single_violet_policy.zip` — TODO: 드라이브 링크 추가 / add Drive link
+- [`single_red_policy.zip`](https://drive.google.com/drive/folders/1sMmklUsCNgJ83Ta7I8AkxXDu3sTb7SNn?usp=sharing)
+- [`single_violet_policy.zip`](https://drive.google.com/drive/folders/1p5qHC2qAC7NjWfneAYq9ql5SrWcoP8aK?usp=sharing)
 
 ---
 
@@ -75,4 +77,4 @@ Each script assumes a `lerobot` workspace at `~/il_ws/src/lerobot` and an active
 - [`review.md`](review.md) — 프로젝트 리뷰 및 트러블슈팅 기록 (국문) / Project review & troubleshooting log (Korean)
 - [`candy_shop.txt`](candy_shop.txt) — 물체 감지·무게 인식 로직 상세 (국문) / Detailed detection/recognition logic (Korean)
 - [`Zoollos-Candy-Shop.pdf`](Zoollos-Candy-Shop.pdf) — 발표 자료 / Presentation slides
-- `inference.MOVE` (데모 영상 / demo video, 84MB) — 리포에는 없음, 구글 드라이브 참고: TODO 링크 추가 / not in this repo, see Google Drive: TODO add link
+- [`inference.MOVE`](https://drive.google.com/file/d/1ZhHIi5arCh7FW93n1qh5yhwFkk_uvtSv/view?usp=drive_link) (데모 영상 / demo video, 84MB) — 리포에는 없음 / not in this repo
